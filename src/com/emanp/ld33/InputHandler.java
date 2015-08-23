@@ -78,11 +78,11 @@ public class InputHandler implements InputProcessor
 				Gdx.graphics.setDisplayMode(d);
 			}else
 			{
-				Gdx.graphics.setDisplayMode(1280, 720, false);
+				Gdx.graphics.setDisplayMode(Game.WIDTH, Game.HEIGHT, false);
 			}
 			//Gdx.graphics.set
 
-			TextureHandler.camera.setToOrtho(true, 1280, 720);
+			TextureHandler.camera.setToOrtho(true, Game.WIDTH, Game.HEIGHT);
 			//TextureHandler.setDisplayMode(1280, 720, !Gdx.graphics.isFullscreen());
 			return true;
 		}
